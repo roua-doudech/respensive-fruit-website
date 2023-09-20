@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+            <h2>cruds</h2>
+            <p>PRODUCT MANAGMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input placeholder="title" type="text" id="title">
+            <div class="price">
+                <input  onkeyup="totalsum()" placeholder="price" type="number" id="price">
+                <input  onkeyup="totalsum()"placeholder="taxes" type="number" id="taxes">
+                <input  onkeyup=" totalsum()" placeholder="ads" type="number" id="ads">
+                <input  onkeyup=" totalsum()"placeholder="discount" type="number" id="discount">
+                 <small id="total"></small>
+            </div>
+            <input  placeholder="count" type="number"  id="count">
+            <br>
+            <input  placeholder="category" type="text"  id="category">
+            <br>
+            <button id="submit">Create</button>
+
+        </div>
+        <div class="outputs">
+            <div class="searchblock">
+                <input onkeyup=" searchdata(this.value)" type="text" placeholder="search" id="search">
+            </div>
+       <div class="btnsearch">
+        <button  onclick=" getsearchmood(this.id)" id ="searchtitle">Search By Title</button>
+        <button  onclick=" getsearchmood(this.id)" id="searchcategory">Search By Category</button>
+       </div>
+       </div>
+       <div id="deleteall">
+
+       </div>
+      <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbody"> 
+            <!-- <tr> -->
+                <!-- <td>1</td>
+                <td>t-shirtt</td>
+                <td>50</td>
+                <td>32</td>
+                <td>88</td>
+                <td>255</td>
+                <td>2100</td>
+                <td>clothes</td>
+                <td><button id="update">update</button></td>
+              <td><button id="delete">delete</button></td> -->
+
+
+        
+   
+        </tbody>
+    </table> 
+
+    
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
